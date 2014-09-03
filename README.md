@@ -1,5 +1,5 @@
-RhythmSaga API (Coming Soon)
-============================
+RhythmSaga API
+==============
 
 I'm working on a free music downloading app called [RhythmSaga](http://rhythmsa.ga), which is basically like iTunes. But free. With top charts, artist information, searching by track, label, producer, or album, and beautiful album art.
 
@@ -10,10 +10,10 @@ Album Art
 
 The album art API fetches the artwork using last.fm network, and if it doesn't find what you need, it further does an image search for the same to bring the best possible album art.
 
-`<img src="http://rhythmsa.ga/api/image?artist=The+Beatles&song=She+Loves+You">`
+`<img src="http://rhythmsa.ga/api/image?mbid=fdfdb3c0-8820-4c22-94e6-6aa136e36c31">`
 
-Artist 
-------
+Artist (Coming Soon) 
+--------------------
 
 a JSON request to URL `http://rhythmsa.ga/api/artist?name=The+Beatles` returns all artist information, including:
 - Name (eg. The Beatles)
