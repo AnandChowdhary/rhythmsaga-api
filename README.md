@@ -17,6 +17,13 @@ The MP3 API generated an MP3 URL of the song requested. It can be used as the `s
 
 `<audio src="http://rhythmsa.ga/api/mp3.php?q=the+beatles+love+me+do">`
 
+Charts API
+----------
+
+The Charts API returns JSON data from the Billboard Hot 100 list, updated weekly.
+
+`http://rhythmsa.ga/api/topcharts.php`
+
 Sharable API
 ------------
 
