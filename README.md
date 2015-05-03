@@ -1,33 +1,71 @@
 RhythmSaga API
 ==============
 
-The RhythmSaga API is a free API which uses multiple sources like last.fm, Spotify, the iTunes API, and a plain simple web search to find the best-quality information for music tracks and artists.
+The RhythmSaga API is an API which uses multiple sources like last.fm, Spotify, the iTunes API, and a plain simple web search to find the best-quality information for music tracks and artists.
 
-Album Art
----------
+####Album Art
 
-The album art API fetches the artwork using Bing in 300*300.
+Fetches album artwork in (mostly) 300*300.
 
 `<img src="http://rhythmsa.ga/api/cover.php?q=the+beatles+one">`
 
-MP3 API
--------
+####MP3 File
 
-The MP3 API generates an MP3 URL of the song requested. It can be used as the `src` of an `audio` tag to make it streamble, or as the header of a page for a download link.
+Returns an MP3 file of the song requested. 
+Can be used as the `src` of an `<audio>` to make it stream, or as the header of a page for a download link.
 
-`<audio src="http://rhythmsa.ga/api/mp3.php?q=the+beatles+love+me+do">`
-`<?php header("Location: http://rhythmsa.ga/api/mp3.php?q=the+beatles+love+me+do"); ?>`
+`<audio src="http://rhythmsa.ga/2/mp3_file.php?q=avril+lavigne+wth">`
 
-Charts API
-----------
+`<?php header("Location: http://rhythmsa.ga/2/mp3_file.php?q=avril+lavigne+wth"); ?>`
 
-The Charts API returns JSON data from the Billboard Hot 100 list, updated weekly.
+####MP3 URL
 
-`http://rhythmsa.ga/api/topcharts.php`
+Returns an MP3 URL of the song requested in plain text. No streaming/downloading.
 
-Sharable API
-------------
+`http://rhythmsa.ga/2/mp3_url.php?q=avril+lavigne+wth`
 
-The Sharable API generates a shortlink using bit.ly of the requested song in text format. The URL takes users to page where a mini-player from Saga can stream the song with links to download it or share it on a social network.
+####Charts
 
-`http://rhythmsa.ga/api/sharable.php?q=the+beatles+love+me+do`
+Returns JSON data from the Billboard Hot 100 list, updated weekly.
+
+####YouTube ID
+
+Returns the ID of the YouTube video of the resulting song in the based on query.
+
+`http://rhythmsa.ga/2/youtube_id.php?q=avril+lavigne+wth` returns `tQmEd_UeeIk`
+
+####Track Name
+
+Returns the name of the resulting song in the correct format based on query.
+
+`http://rhythmsa.ga/2/track_name.php?q=avril+lavigne+wth` returns `What the Hell`
+
+####Artist Name
+
+Returns the name of the artist of the resulting song in the correct format based on query.
+
+`http://rhythmsa.ga/2/artist_name.php?q=avril+lavigne+wth` returns `Avril Lavigne`
+
+####Album Name
+
+Returns the name of the album of the resulting song in the correct format based on query.
+
+`http://rhythmsa.ga/2/album_name.php?q=avril+lavigne+wth` returns `What the Hell - Single`
+
+####Release Date
+
+Returns the release date of the resulting song in the correct format based on query.
+
+`http://rhythmsa.ga/2/release_date.php?q=avril+lavigne+wth` returns `2011-01-07T08:00:00Z`
+
+####Genre
+
+Returns the primary genre of the resulting song in the correct format based on query.
+
+`http://rhythmsa.ga/2/genre.php?q=avril+lavigne+wth` returns `Pop`
+
+####Track Number
+
+Returns the track number of the resulting song in the correct format based on query.
+
+`http://rhythmsa.ga/2/track_number.php?q=avril+lavigne+wth` returns `1`
