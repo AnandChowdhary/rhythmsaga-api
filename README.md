@@ -28,6 +28,8 @@ Returns an MP3 URL of the song requested in plain text. No streaming/downloading
 
 Returns JSON data from the Billboard Hot 100 list, updated weekly.
 
+`http://rhythmsa.ga/api/topcharts.php`
+
 ####YouTube ID
 
 Returns the ID of the YouTube video of the resulting song in the based on query.
