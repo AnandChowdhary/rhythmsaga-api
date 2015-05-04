@@ -3,11 +3,17 @@ RhythmSaga API
 
 The RhythmSaga API is an API which uses multiple sources like last.fm, Spotify, the iTunes API, and a plain simple web search to find the best-quality information for music tracks and artists.
 
+####Everything
+
+Fetches everything the API offers in JSON format.
+
+`http://rhythmsa.ga/2/everything.php?q=avril+lavigne+wth`
+
 ####Album Art
 
 Fetches album artwork in (mostly) 300*300.
 
-`<img src="http://rhythmsa.ga/api/cover.php?q=the+beatles+one">`
+`<img src="http://rhythmsa.ga/api/cover.php?q=avril+lavigne+wth">`
 
 ####MP3 File
 
