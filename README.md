@@ -7,7 +7,8 @@ The RhythmSaga API is an API which uses multiple sources like last.fm, Spotify, 
 
 Fetches everything the API offers in JSON format.
 
-`http://rhythmsa.ga/2/everything.php?q=avril+lavigne+wth`
+`http://rhythmsa.ga/2/everything.php?q=avril+lavigne+wth`,
+or `http://rhythmsa.ga/2/everything_post.php` with a `POST` query.
 
 ####Album Art
 
