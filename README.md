@@ -58,7 +58,7 @@ Returns an MP3 URL of the song requested in plain text. No streaming/downloading
 
 Returns JSON data from the Billboard Hot 100 list, updated weekly.
 
-`http://rhythmsa.ga/api/topcharts.php`
+`http://rhythmsa.ga/api.php?api=top_charts&q=the+beatles+love+me+do`
 
 ####YouTube ID
 
