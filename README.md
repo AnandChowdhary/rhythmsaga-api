@@ -29,6 +29,10 @@ Fetches everything the API offers in JSON format.
 
 `http://rhythmsa.ga/api.php?api=everything&q=the+beatles+love+me+do`
 
+JSON returned:
+
+`{"track":"Love Me Do","artist":"The Beatles","album":"1","release":"2000-11-13T08:00:00Z","genre":"Rock","trackno":1,"albumart":"http:\/\/rhythmsa.ga\/api\/cover.php?q=Love+Me+Do The Beatles","youtubeid":"Jbt8oH5Lxto","api":"RhythmSaga","apiversion":2,"query":"the beatles love me do"}`
+
 ####Album Art
 
 Fetches album artwork in (mostly) 300*300.
