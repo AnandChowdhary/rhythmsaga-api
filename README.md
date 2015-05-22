@@ -8,6 +8,7 @@ The RhythmSaga API is an API which uses multiple sources like last.fm, Spotify, 
 The RhythmSaga API is super-simple to use. It accepts both `GET` and `POST` queries through two parameters, `api` and `q`, and returns in plain-text format (except `everything`, which returns JSON.)
 
 The following can be passed through the `api` parameter:
+- `search` (returns 6 results)
 - `everything`
 - `cover`
 - `mp3_file`
